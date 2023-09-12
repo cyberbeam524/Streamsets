@@ -5,7 +5,7 @@
 
 
 ### Visualisations from Kibana after data is stored in Elasticsearch
-![alt text](https://github.com/maars202/fluffy-potato/blob/main/img/vizDashboard.png)
+![alt text](https://github.com/cyberbeam524/data-atFingerTips/blob/main/img/vizDashboard.png)
 
 ## Installation Requirements:
 - Docker
@@ -32,7 +32,7 @@ docker-compose exec kafka kafka-console-consumer.sh --bootstrap-server kafka:909
 <img src="./img/iotDeviceData.png" style="width:55%">
 
 Similarly for topic 'crypto_msg', this should be seen in terminal:
-![alt text](https://github.com/maars202/fluffy-potato/blob/main/img/crytoData.png)
+![alt text](https://github.com/cyberbeam524/data-atFingerTips/blob/main/img/crytoData.png)
 
 4. Run this command to submit a flink job to process the real time data from kafka data stream source and push it into elasticsearch sink:
 ```
@@ -40,7 +40,7 @@ docker-compose exec jobmanager ./bin/flink run -py /opt/pyflink/temp_data.py -d
 ```
 
 A job should be submitted as seen on 
-![alt text](https://github.com/maars202/fluffy-potato/blob/main/img/flinkJobs.png)
+![alt text](https://github.com/cyberbeam524/data-atFingerTips/blob/main/img/flinkJobs.png)
 
 Similarly for topic 'crypto_msg', this job can be submitted:
 ```
